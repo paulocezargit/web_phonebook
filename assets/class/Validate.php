@@ -29,6 +29,47 @@ class Validate{
 
 	}
 
+	function Name($name) {
+
+   		// Trim leading and trailing whitespace
+		$name = trim($name);
+
+    	// Check if the name is empty
+		if (empty($name)) {
+			//return "Name cannot be empty.";
+		}
+
+    	// Check if the name contains only valid characters (letters, spaces, hyphens, apostrophes)
+		if (!preg_match("/^[a-zA-ZÀ-ÿ\s'-]+$/u", $name)) {
+			//return "Name contains invalid characters.";
+		}
+
+    	// Validation passed
+		return true;
+
+	}
+	
+	function Email($email) {
+
+    	// Trim leading and trailing whitespace
+		$email = trim($email);
+
+    	// Check if the email is empty
+		if (empty($email)) {
+			//return "Email cannot be empty.";
+		}
+
+    	// Validate email format using PHP's built-in filter
+		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			//return "Invalid email format.";
+		}
+
+    	// Validation passed
+		return true;
+
+	}
+
+
 }
 
 
