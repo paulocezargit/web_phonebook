@@ -1,12 +1,15 @@
 
 *{ box-sizing: border-box; }
-.container{ position: relative; width: 100%;  display:flex;  justify-content:center; }
-.box{ width: 1024px;  }
-.searchengine{ width: 100%; margin-bottom:20px; margin-top: 20px; display: grid; grid-template-columns: auto 130px; grid-gap: 10px; }
-.searchengine-input{ width:100%; background-color:  #ddd;   padding: 15px; border-radius: 30px; border: none; outline: none; }
-.searchengine-button{ background-color:  #0099ff; color: #fff; width:100%; padding: 15px; cursor: pointer; border-radius: 30px; border: none; outline: none; }
+body{ background-color: #666699; }
+.container{  position: relative; width: 100%;  display:flex;  justify-content:center; }
+.box{ margin-top: 20px; width: 1024px; background-color: #efeff5; padding: 20px 40px; padding-bottom: 50px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 10px; }
+.supertitle{ padding: 0px; margin-bottom: 20px; font-size: 40px; color: #666699; }
+.searchengine{ width: 100%; margin-bottom:20px; margin-top: 20px; display: grid; grid-template-columns: auto 130px; grid-gap: 10px;  }
+.searchengine-input{ width:100%; background-color:  #efeff5; border: 1px solid #a1a1c4; font-size: 16px; padding: 15px; border-radius: 30px; outline: none; }
+.searchengine-button{ background-color:  #0099ff; color: #fff; font-size: 16px; width:100%; padding: 15px; cursor: pointer; border-radius: 30px; border: none; outline: none; }
 .phonelist{  }
-.phonelist-item{ width: 1024px; padding: 15px 10px; border-bottom: 1px solid rgba(0, 0, 0, .15); display: grid; grid-template-columns: auto 200px 80px;  }
+.phonelist-item{ box-sizing: border-box; padding: 15px 10px;  display: grid; grid-template-columns: auto 200px 80px;  }
+.phonelist-item:nth-child(odd) {  } .phonelist-item:nth-child(even) { background-color: rgba(0, 0, 0, .05); border-radius: 3px; }
 .phonelist-item-name{  }
 .phonelist-item-number{  }
 .phonelist-item-button{  }
