@@ -22,17 +22,27 @@
 
 			<div class="searchengine">
 				<input type="" name="" class="searchengine-input" placeholder="Enter something...">
-				<button class="searchengine-button">Search</button>
+				<button class="searchengine-button-search">Search</button>
+				<button class="searchengine-button-new">New Contact</button>
 			</div>
 
 			<div class="phonelist">
 
-				<?php for($i = 0; $i < 10; $i++){ ?>
+				<?php for($i = 0; $i < 20; $i++){ ?>
 
 					<div class="phonelist-item">
-						<div class="phonelist-item-name">Name Contact</div>
-						<div class="phonelist-item-number">550123213132</div>
-						<div class="phonelist-item-button">Remove</div>
+						<div class="phonelist-item-center">
+							<div class="phonelist-item-name">Name Contact</div>
+						</div>
+						<div class="phonelist-item-center">
+							<div class="phonelist-item-number">+55 (21) 1324-2334</div>
+						</div>
+						<div class="phonelist-item-center">
+							<div class="phonelist-item-button-edit">Edit</div>
+						</div>
+						<div class="phonelist-item-center">
+							<div class="phonelist-item-button-remove">Remove</div>
+						</div>
 					</div>
 
 				<?php } ?>
